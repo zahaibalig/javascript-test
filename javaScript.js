@@ -2094,11 +2094,6 @@ const bankDepositSum = accounts
 
 console.log(bankDepositSum);
 
-// 2.
-// const numDeposits1000 = accounts
-//   .flatMap(acc => acc.movements)
-//   .filter(mov => mov >= 1000).length;
-
 const numDeposits1000 = accounts
   .flatMap(acc => acc.movements)
   .reduce((count, cur) => (cur >= 1000 ? ++count : count), 0);
@@ -2144,7 +2139,7 @@ console.log(convertTitleCase('this is a nice title'));
 console.log(convertTitleCase('this is a LONG title but not too long'));
 console.log(convertTitleCase('and here is another title with an EXAMPLE'));
 
-// Coding Challenge #4
+
 
 /* 
 Julia and Kate are still studying dogs, and this time they are studying if dogs are eating too much or too little.
